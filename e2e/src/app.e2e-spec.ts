@@ -8,7 +8,7 @@ describe('new App', () => {
   });
   describe('default screen', () => {
     beforeEach(() => {
-      page.navigateTo('/home');
+      page.navigateTo('/inbox');
     });
     it('should have a title saying Home', () => {
       page.getPageOneTitleText().then(title => {

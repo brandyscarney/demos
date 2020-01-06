@@ -1,5 +1,7 @@
 {
-  "name": "listApp",
-  "integrations": {},
+  "name": "inboxapp",
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
