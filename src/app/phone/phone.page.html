@@ -17,8 +17,8 @@
       <ion-title size="large">Recents</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-list [ngClass]="{ 'collapse-all': segment === 'missed' }">
-    <ion-item *ngFor="let item of items" [class]="item.missed ? 'missed-call' : 'all-call'">
+  <ion-list>
+    <ion-item *ngFor="let item of items" [ngClass]="{ 'collapse': segment === 'missed', 'missed-call': item.missed, 'all-call': !item.missed }">
       <ion-label>
         <h2>{{item.name}} <span *ngIf="item.missed">({{item.missed_amount}})</span></h2>
         <p>{{item.city}}, {{item.state}}</p>

@@ -1,17 +1,30 @@
 
+ion-segment {
+  --background: rgba(var(--ion-text-color-rgb, 0, 0, 0), .11);
+}
+
+h2 {
+  font-weight: 600;
+}
+
 .missed-call h2 {
   color: var(--ion-color-danger);
 }
 
 ion-note {
-  font-size: 14px;
+  font-size: 15px;
+}
+
+ion-item p,
+ion-note {
+  color: rgba(var(--ion-text-color-rgb, 0, 0, 0), 0.55);
 }
 
 .all-call {
-  transition: max-height 300ms ease-in;
-  max-height: 500px;
-}
+  transition: max-height 250ms ease-out;
+  max-height: 62px;
 
-.collapse-all .all-call {
-  max-height: 0;
+  &.collapse {
+    max-height: 0;
+  }
 }
