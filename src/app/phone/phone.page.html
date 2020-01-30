@@ -8,15 +8,17 @@
         Missed
       </ion-segment-button>
     </ion-segment>
-    <ion-buttons slot="end">
-      <ion-button>Edit</ion-button>
-    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-item *ngFor="let item of items" [class]="item.missed ? 'missed-call' : null">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Recents</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-list [ngClass]="{ 'collapse-all': segment === 'missed' }">
+    <ion-item *ngFor="let item of items" [class]="item.missed ? 'missed-call' : 'all-call'">
       <ion-label>
         <h2>{{item.name}} <span *ngIf="item.missed">({{item.missed_amount}})</span></h2>
         <p>{{item.city}}, {{item.state}}</p>

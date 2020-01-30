@@ -2,3 +2,16 @@
 .missed-call h2 {
   color: var(--ion-color-danger);
 }
+
+ion-note {
+  font-size: 14px;
+}
+
+.all-call {
+  transition: max-height 300ms ease-in;
+  max-height: 500px;
+}
+
+.collapse-all .all-call {
+  max-height: 0;
+}
