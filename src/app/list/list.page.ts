@@ -6,34 +6,58 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['list.page.scss']
 })
 export class ListPage implements OnInit {
-  private selectedItem: any;
-  private icons = [
-    'flask',
-    'wifi',
-    'beer',
-    'football',
-    'basketball',
-    'paper-plane',
-    'american-football',
-    'boat',
-    'bluetooth',
-    'build'
+  public hotTracks: Array<{ title: string; artist: string; img: string }> = [
+    {
+      title: 'Hey Jude',
+      artist: 'The Beatles',
+      img: 'assets/music/hey-jude.jpg'
+    },
+    {
+      title: 'Hound Dog',
+      artist: 'Elvis Presley',
+      img: 'assets/music/hound-dog.jpg'
+    },
+    {
+      title: 'Good Vibrations',
+      artist: 'The Beach Boys',
+      img: 'assets/music/good-vibrations.jpg'
+    },
+    {
+      title: 'I Walk The Line',
+      artist: 'Johnny Cash',
+      img: 'assets/music/i-walk-the-line.jpg'
+    },
   ];
-  public items: Array<{ title: string; note: string; icon: string }> = [];
+
+  public newTracks: Array<{ title: string; artist: string; img: string }> = [
+    {
+      title: 'Bohemian Rhapsody',
+      artist: 'Queen',
+      img: 'assets/music/bohemian-rhapsody.jpg'
+    },
+    {
+      title: 'Don\'t Stop Believin\'',
+      artist: 'Journey',
+      img: 'assets/music/dont-stop-believin.jpg'
+    },
+    {
+      title: 'Hit Me with Your Best Shot',
+      artist: 'Pat Benetar',
+      img: 'assets/music/hit-me-with-your-best-shot.jpg'
+    },
+    {
+      title: 'Sweet Home Alabama',
+      artist: 'Lynyrd Skynyrd',
+      img: 'assets/music/sweet-home-alabama.jpg'
+    },
+  ];
+
   constructor() {
-    for (let i = 1; i < 11; i++) {
-      this.items.push({
-        title: 'Item ' + i,
-        note: 'This is item #' + i,
-        icon: this.icons[Math.floor(Math.random() * this.icons.length)]
-      });
-    }
+
   }
 
   ngOnInit() {
+
   }
-  // add back when alpha.4 is out
-  // navigate(item) {
-  //   this.router.navigate(['/list', JSON.stringify(item)]);
-  // }
+
 }

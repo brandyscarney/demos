@@ -1,1 +1,25 @@
 
+ion-grid {
+  padding: 0 15px;
+}
+
+.new-music ion-item {
+  --padding-start: 0;
+  --padding-end: 0;
+  --inner-padding-start: 0;
+  --inner-padding-end: 0;
+}
+
+ion-thumbnail {
+  height: 40px;
+  width: 40px;
+}
+
+img {
+  border-radius: 4px;
+}
+
+ion-list ion-item:last-child {
+  --border-width: 0;
+  --inner-border-width: 0;
+}
