@@ -10,6 +10,11 @@ ion-grid {
   --inner-padding-end: 0;
 }
 
+.new-music h3 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 ion-thumbnail {
   height: 40px;
   width: 40px;
