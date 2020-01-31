@@ -18,6 +18,10 @@ const routes: Routes = [
   {
     path: 'music',
     loadChildren: () => import('./music/music.module').then(m => m.MusicPageModule)
+  },
+  {
+    path: 'colors',
+    loadChildren: () => import('./colors/colors.module').then(m => m.ColorsPageModule)
   }
 ];
 

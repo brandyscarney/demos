@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Colors
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen>
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">
+        Colors
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let color of colors" size="4">
+        <div
+          #colorBlock
+          [ngClass]="'color-block ion-color ion-color-' + color">
+          <b>{{ color }}</b><br>
+          {{ getColorBase(colorBlock)}}
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

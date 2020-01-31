@@ -25,6 +25,11 @@ export class AppComponent {
       title: 'Music (List Header)',
       url: '/music',
       icon: 'musical-note'
+    },
+    {
+      title: 'Colors (Ionic Colors)',
+      url: '/colors',
+      icon: 'color-palette'
     }
   ];
 
