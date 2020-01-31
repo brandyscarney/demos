@@ -23,8 +23,8 @@ export class AppComponent {
     },
     {
       title: 'Music (List Header)',
-      url: '/list',
-      icon: 'list'
+      url: '/music',
+      icon: 'musical-note'
     }
   ];
 

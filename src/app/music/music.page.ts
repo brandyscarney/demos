@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-list',
-  templateUrl: 'list.page.html',
-  styleUrls: ['list.page.scss']
+  selector: 'app-music',
+  templateUrl: 'music.page.html',
+  styleUrls: ['music.page.scss']
 })
-export class ListPage implements OnInit {
+export class MusicPage implements OnInit {
   public hotTracks: Array<{ title: string; artist: string; img: string }> = [
     {
       title: 'Hey Jude',

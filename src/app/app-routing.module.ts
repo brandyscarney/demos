@@ -16,8 +16,8 @@ const routes: Routes = [
     loadChildren: () => import('./phone/phone.module').then(m => m.PhonePageModule)
   },
   {
-    path: 'list',
-    loadChildren: () => import('./list/list.module').then(m => m.ListPageModule)
+    path: 'music',
+    loadChildren: () => import('./music/music.module').then(m => m.MusicPageModule)
   }
 ];
 
